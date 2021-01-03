@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/work/image-viewer-spa/app/css/style.css">
+<body>
+    <div id="app">
+        <div class="wrap">
+            <image-thumbnail v-for="(img,i) in images" :key="i" :path="img.path" @clickimage="onSelectImage(img.path)"></image-thumbnail>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./script/script.js"></script>
+</body>
